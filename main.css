@@ -1,0 +1,380 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  /* scroll-padding: 10vh; */
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  transition-property: width;
+  transition: 300ms ease-in;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(129, 129, 129);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(41, 41, 41);
+}
+
+::-webkit-scrollbar-track {
+  backdrop-filter: blur(0.4rem);
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.nav {
+  width: 100vw;
+  height: 10vh;
+  background-color: transparent;
+  backdrop-filter: blur(0.8rem);
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0%;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+header {
+  /* position: relative; */
+
+  width: 100vw;
+  height: 100vh;
+  /* background-color: rgb(250, 252, 156); */
+  padding-top: 10vh;
+  background-image: url("/images/road.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.middle {
+  position: relative;
+  width: 100vw;
+  background-color: blanchedalmond;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("/images/camerawithtext.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.getInspired {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.location {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+}
+footer {
+  width: 100vw;
+  height: 50vh;
+  padding-left: 15px;
+  background-color: rgb(0, 0, 0);
+}
+
+/* navigation elements */
+.nav-bar {
+  width: 30vw;
+  display: flex;
+  justify-content: space-around;
+}
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  transition-property: color;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+}
+.nav li {
+  list-style-type: none;
+}
+
+.nav a:hover {
+  color: azure;
+}
+
+/* Header elements */
+header h1 {
+  font-size: 10vw;
+  margin-left: 5vw;
+}
+header a {
+  color: rgb(53, 53, 53);
+  transition-property: color;
+  transition: 400ms ease-out;
+}
+header a:hover {
+  color: rgb(255, 255, 255);
+}
+.downArrow {
+  display: flex;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 30px;
+  left: 50vw;
+  justify-content: center;
+  border-radius: 40px;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  background: rgba(240, 255, 255, 0.411);
+  transition: 300ms ease-in-out;
+}
+
+.downArrow:hover {
+  backdrop-filter: blur(1rem);
+  background-color: whitesmoke;
+  /* background-color: rgba(0, 0, 0, 0.568); */
+}
+.downArrow:active {
+  background-color: rgb(255, 255, 255);
+}
+.upArrow {
+  display: flex;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 5px;
+  left: 50vw;
+  justify-content: center;
+  border-radius: 40px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  background: rgba(240, 255, 255, 0.411);
+  transition: 300ms ease-in-out;
+  z-index: 1;
+}
+
+.upArrow:hover {
+  backdrop-filter: blur(1rem);
+  background-color: whitesmoke;
+}
+.upArrow:active {
+  background-color: rgb(255, 255, 255);
+}
+
+/* section elements */
+.middle h2 {
+  font-size: 2vw;
+}
+.getInspContainer {
+  font-size: 2vw;
+  margin-top: 30vh;
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: column;
+}
+/* .getInspContainer h2 {
+  font-family: league-gothic, sans-serif;
+  font-weight: 400;
+  font-size: 5vw;
+  font-style: normal;
+} */
+.getInspBtn,
+.getInspBtn2 {
+  font-weight: 500;
+  text-align: center;
+
+  width: 20vw;
+  height: 15vh;
+  font-size: 1.3vw;
+  background-color: rgb(250, 120, 120);
+  padding-top: 40px;
+  box-sizing: border-box;
+  transition: 300ms ease-in background-color;
+}
+.getInspBtn2 {
+  width: 15vw;
+  height: 10vh;
+  position: absolute;
+  bottom: 10%;
+  left: 60%;
+  padding-top: 20px;
+  transition: 300ms ease-in background-color;
+}
+
+.getInspBtn a,
+.getInspBtn2 a {
+  color: black;
+}
+.getInspBtn:hover,
+.getInspBtn2:hover {
+  background-color: blanchedalmond;
+}
+.img-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-left: 50px;
+  z-index: 0;
+}
+.img-container img {
+  width: 80%;
+  box-shadow: 10px 10px 10px rgb(119, 119, 119);
+  transition-property: opacity;
+  transition: 300ms ease-out;
+}
+.img-container:hover::after {
+  content: " Explore";
+  position: absolute;
+  left: 0px;
+  top: 23%;
+  text-align: center;
+  padding-top: 17%;
+  box-sizing: border-box;
+  font-size: 4rem;
+  color: whitesmoke;
+  width: 80%;
+  height: 53%;
+  z-index: -1;
+  background-color: rgb(0, 0, 0);
+}
+.img-container:active::after {
+  content: "Explore";
+  color: black;
+  background: rgb(255, 255, 255);
+}
+.img-container img:hover {
+  opacity: 0.2;
+}
+.img-container img:active {
+  opacity: 0.1;
+}
+/* location elements */
+.mapContainer {
+  width: 90vw;
+  height: 90vh;
+  margin-top: 2%;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.425);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(206, 255, 232);
+  color: rgb(80, 80, 80);
+}
+.location h2 {
+  font-size: 5vw;
+}
+/* footer elements */
+footer a {
+  color: rgb(209, 209, 209);
+}
+
+/*----------------------------------
+---------DESTINATIONS page----------
+------------------------------------
+------------------------------------ */
+
+/*
+---------------------
+ hover navigation      
+---------------------
+*/
+
+.navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+
+  transition: 300ms 100ms ease-in box-shadow, 300ms ease-in width;
+}
+.navlink {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+.item-link {
+  font-size: 1.3vw;
+  color: rgb(0, 0, 0);
+}
+.nav-item {
+  display: none;
+  position: relative;
+}
+.hamburger {
+  width: 2vw;
+  height: 5vh;
+  margin: 1rem;
+  fill: black;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+
+  transition: 200ms ease-out fill;
+}
+.navbar:hover .hamburger {
+  fill: rgb(114, 114, 114);
+}
+.navbar:hover,
+.navbar:target {
+  width: 100vw;
+  height: 10vh;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.11);
+}
+.navbar:hover .nav-item,
+.navbar:target .nav-item {
+  display: flex;
+}
+
+.item-link:hover {
+  color: rgb(238, 183, 132);
+}
+
+/*----------------------------------
+------------------------------------
+Get INSPIRED PAGE 
+------------------------------------
+------------------------------------*/
+
+.gallery1,
+.gallery2 {
+  position: relative;
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /* background-image: url("/images/camerawithtext.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: rgba(208, 230, 127, 0.479);
+}
+.gallery2 {
+  background-color: rgb(255, 255, 255);
+  flex-wrap: wrap;
+}
+
+.gall-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.521);
+  display: none;
+}
