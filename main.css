@@ -51,7 +51,7 @@ header {
   height: 100vh;
   /* background-color: rgb(250, 252, 156); */
   padding-top: 10vh;
-  background-image: url("https://github.com/J-Sparr0w/Palakkad/blob/main/images/road.jpg");
+  background-image: url("images/road.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -64,7 +64,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: url("https://github.com/J-Sparr0w/Palakkad/blob/main/images/camerawithtext.png");
+  background-image: url("images/camerawithtext.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
