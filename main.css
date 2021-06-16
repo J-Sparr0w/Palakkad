@@ -347,34 +347,3 @@ footer a {
   color: rgb(238, 183, 132);
 }
 
-/*----------------------------------
-------------------------------------
-Get INSPIRED PAGE 
-------------------------------------
-------------------------------------*/
-
-.gallery1,
-.gallery2 {
-  position: relative;
-
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  /* background-image: url("/images/camerawithtext.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-  background-color: rgba(208, 230, 127, 0.479);
-}
-.gallery2 {
-  background-color: rgb(255, 255, 255);
-  flex-wrap: wrap;
-}
-
-.gall-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.726);
- 
-}

@@ -1,0 +1,28 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  transition-property: width;
+  transition: 300ms ease-in;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(129, 129, 129);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(41, 41, 41);
+}
+
+::-webkit-scrollbar-track {
+  backdrop-filter: blur(0.4rem);
+}
+
+
