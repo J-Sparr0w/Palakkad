@@ -176,49 +176,45 @@ html {
   background-color: white;
 }
 
+footer {
+  height: 100vh;
+  background: black;
+}
+
 /*----------------------------------
 ------------------------------------
 Get INSPIRED PAGE 
 ------------------------------------
 ------------------------------------*/
-.gallery1,
-.gallery2 {
-  position: relative;
-  max-width: 100vw;
-  height: 100vh;
+.gallery-container {
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.gallery2 {
-  background-color: white;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 5rem 0rem;
 }
 
 .gallery {
-  width: 90vw;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  grid-gap: 0.8rem;
+  max-width: 90vw;
+  max-height: 100%;
+  -webkit-column-count: 3;
+          column-count: 3;
 }
 
 .gallery .photo {
   width: 100%;
+  min-height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
 .gallery .photo:hover {
@@ -226,5 +222,19 @@ Get INSPIRED PAGE
           transform: scale(1.02);
   -webkit-transition: 350ms 100ms transform ease-in;
   transition: 350ms 100ms transform ease-in;
+}
+
+@media only screen and (max-width: 740px) {
+  .gallery {
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+  .gallery {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
 }
 /*# sourceMappingURL=style.css.map */
